@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:loading/loading.dart';
+
+import 'loading.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute<void>(
-                            builder: (BuildContext context) => Pumping(),
+                            builder: (BuildContext context) => Loading(),
                             fullscreenDialog: true,
                           ),
                         );
